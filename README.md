@@ -2,11 +2,11 @@
 
 # Compress PDF using postscript as Intermediate step[1]
 
-### #Convert to intermediate postscript format
+### Convert to intermediate postscript format
 `pdf2ps large.pdf large.ps`
 
 
-### #convert ps back to pdf
+### convert ps back to pdf
 `ps2pdf large.ps small.pdf`
 
 
