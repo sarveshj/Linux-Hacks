@@ -23,7 +23,12 @@ Command to list files in the current directory
 
 ## ``` Convert all files in a folder ```
 ####  Example Convert files between jpg and png
-for i in *.jpg ; do convert "$i" "${i%.*}.png" ; done
+```
+for i in *.jpg ; 
+  do 
+    convert "$i" "${i%.*}.png" ; 
+  one
+```
 
 
 
