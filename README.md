@@ -1,6 +1,6 @@
 
 
-# ``` Compress PDF using postscript as Intermediate step[1] ```
+## ``` Compress PDF using postscript as Intermediate step[1] ```
 
 ### Step 1:Convert to intermediate postscript format
 `pdf2ps large.pdf large.ps`
@@ -11,7 +11,7 @@
 
 
 
-# ``` Run a Bash command every 10seconds ```
+## ``` Run a Bash command every 10seconds ```
 
 ### ```watch -n10 "args command"```
 
@@ -20,6 +20,10 @@ Command to list files in the current directory
 
 
 
+
+## ``` Convert all files in a folder ```
+###  Example Convert files between jpg and png
+for i in *.jpg ; do convert "$i" "${i%.*}.png" ; done
 
 
 
@@ -31,3 +35,4 @@ https://stackoverflow.com/questions/5296667/pdftk-compression-option
 
 [2] Excecute Bash Command every 10 seconds
 https://askubuntu.com/questions/82616/how-to-execute-command-every-10-seconds-without-cron
+
