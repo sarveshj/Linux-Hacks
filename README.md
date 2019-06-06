@@ -27,7 +27,7 @@ Command to list files in the current directory
 for i in *.jpg ; 
   do 
     convert "$i" "${i%.*}.png" ; 
-  one
+  done
 ```
 
 
