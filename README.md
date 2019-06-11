@@ -23,6 +23,8 @@ Example - Command to list files in the current directory
 
 
 ## ``` [3] Convert all files in a folder - Example Convert files between jpg and png ```
+
+```
 for i in *.jpg ; 
   do 
     convert "$i" "${i%.*}.png" ; 
