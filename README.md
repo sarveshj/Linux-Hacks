@@ -28,11 +28,25 @@ Example - Command to list files in the current directory
 for i in *.jpg ; 
   do 
     convert "$i" "${i%.*}.png" ; 
+    
+    
   done
 ```
 
 
 
+
+## ``` [3] Set bash prompt                           ```
+
+```export PS1= "\u@\h: \w:$"```
+
+where ```\u ``` is username,
+      ```\h ``` is hostname,
+      ```\w ``` is present working directory
+      
+      
+example: ```export PS1="$(whoami)@$(hostname):$(pwd)" ```
+      
 
 # References
 
@@ -41,4 +55,8 @@ https://stackoverflow.com/questions/5296667/pdftk-compression-option
 
 [2] Excecute Bash Command every 10 seconds  
 https://askubuntu.com/questions/82616/how-to-execute-command-every-10-seconds-without-cron
+
+
+[3] Display current working directory in bash prompt
+https://superuser.com/questions/601181/how-to-display-current-path-in-command-prompt-in-linuxs-sh-not-bash
 
