@@ -51,7 +51,7 @@ example: ```export PS1="$(whoami)@$(hostname):$(pwd)" ```
 
 ### ``` [5] Search for files with multiple extensions - example: Images with both `.png` and `.jpg` format ```
 
-``` find <file_path> -iname "*.jpg" -or -iname "*.png" | wc
+``` find <file_path> -iname "*.jpg" -or -iname "*.png" | wc ```
 
 
 
