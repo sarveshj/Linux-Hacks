@@ -1,6 +1,6 @@
 
 
-## ``` [1] Compress PDF using postscript as Intermediate step ```
+### ``` [1] Compress PDF using postscript as Intermediate step ```
 
 #### Step 1:Convert to intermediate postscript format
 `pdf2ps large.pdf large.ps`
@@ -11,7 +11,7 @@
 
 
 
-## ``` [2] Run a Bash command every 10 seconds ```
+### ``` [2] Run a Bash command every 10 seconds ```
 
 Syntax
 #### ```watch -n10 "args command"```
@@ -22,7 +22,7 @@ Example - Command to list files in the current directory
 
 
 
-## ``` [3] Convert all files in a folder - Example Convert files between jpg and png ```
+### ``` [3] Convert all files in a folder - Example Convert files between jpg and png ```
 
 ```
 for i in *.jpg ; 
@@ -36,7 +36,7 @@ for i in *.jpg ;
 
 
 
-## ``` [3] Set bash prompt                           ```
+### ``` [4] Set bash prompt                           ```
 
 ```export PS1= "\u@\h: \w:$"```
 
@@ -47,6 +47,13 @@ where ```\u ``` is username,
       
 example: ```export PS1="$(whoami)@$(hostname):$(pwd)" ```
       
+
+
+### ``` [5] Search for files with multiple extensions - example: Images with both `.png` and `.jpg` format ```
+
+``` find <file_path> -iname "*.jpg" -or -iname "*.png" | wc
+
+
 
 # References
 
