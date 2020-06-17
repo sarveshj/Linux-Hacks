@@ -54,6 +54,10 @@ example: ```export PS1="$(whoami)@$(hostname):$(pwd)" ```
 ``` find <file_path> -iname "*.jpg" -or -iname "*.png" | wc ```
 
 
+#### ```[6] Copy files from remote machine to local machine with following symbolic option
+
+``` rsync -avzL username@remote:path local-path ```
+
 
 # References
 
