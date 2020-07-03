@@ -54,20 +54,20 @@ example: ```export PS1="$(whoami)@$(hostname):$(pwd)" ```
 ``` find <file_path> -iname "*.jpg" -or -iname "*.png" | wc ```
 
 
-#### ```[6] Copy files from remote machine to local machine with following symbolic option
+### ```[6] Copy files from remote machine to local machine with following symbolic option
 
 ``` rsync -avzL username@remote:path local-path ```
 
 
-# References
 
-[1] Stackoverflow pdf compression  
-https://stackoverflow.com/questions/5296667/pdftk-compression-option
+### ```[7] Changing jupyter notebook themes ```
 
-[2] Excecute Bash Command every 10 seconds  
-https://askubuntu.com/questions/82616/how-to-execute-command-every-10-seconds-without-cron
+Install jupyterthemes and run the following command for monokai font
+```jt -t monokai -cellw 90% ```
 
 
-[3] Display current working directory in bash prompt
-https://superuser.com/questions/601181/how-to-display-current-path-in-command-prompt-in-linuxs-sh-not-bash
+For list of all available themes use 
+```jt -l```
+
+
 
