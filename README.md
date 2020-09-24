@@ -85,8 +85,8 @@ For list of all available themes use ```jt -l```
 
 ### ```[9] Download large zip files from dropbox link```
 
-- wget <url>
-- Check integrity of zip file using unzip -t <zipfile_name>
+- `wget <url>`
+- Check integrity of zip file using `unzip -t <zipfile_name>`
 
 
 
