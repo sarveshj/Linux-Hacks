@@ -83,4 +83,10 @@ For list of all available themes use ```jt -l```
 - In case cheese is not installed, you can install it using `sudo apt-get install cheese`
 
 
+### ```[9] Download large zip files from dropbox link```
+
+- wget <url>
+- Check integrity of zip file using unzip -t <zipfile_name>
+
+
 
