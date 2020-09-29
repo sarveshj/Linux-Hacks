@@ -89,4 +89,26 @@ For list of all available themes use ```jt -l```
 - Check integrity of zip file using `unzip -t <zipfile_name>`
 
 
+### ```[10] Read Image and overlay rectangle using Python```
+
+```python
+from matplotlib import pyplot as plt
+from PIL import Image
+from matplotlib.patches import Rectangle
+
+image = Image.open(<path_to_img>)
+# rectangle co-ordinates is of the form (xmin,ymin), width, height
+origin = (xmin, ymin)
+width  = xmax-xmin
+height = ymax-ymin
+
+# display image and overlay rectangle
+plt.imshow(image)
+patch = Rectangle(origin, width, height, linewidth = 10, edgecolor='r')
+plt.gca().add_patch(patch)
+plt.show()
+
+```
+
+
 
