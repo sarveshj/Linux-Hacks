@@ -110,5 +110,10 @@ plt.show()
 
 ```
 
+### ```[11] Get Laptop configuration from command line```
+
+- `sudo lshw -html > config.html` to dump specification as html file
+- Use `firefox config.html` to view the details
+
 
 
