@@ -116,4 +116,11 @@ plt.show()
 - Use `firefox config.html` to view the details
 
 
+### ```[12] Git stop tracking a file```
+
+```bash
+git update-index --skip-worktree <file_name>
+```
+
+
 
