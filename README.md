@@ -122,5 +122,20 @@ plt.show()
 git update-index --skip-worktree <file_name>
 ```
 
+### ```[13] Saving and recreating a conda virtual environment ```
+```bash
+
+
+# activate conda environment
+conda activate <env_name>
+
+# export environment to a file
+conda env export  > environment.yml
+
+# recreate conda environment from file
+conda env create -f environment.yml
+
+
+```
 
 
