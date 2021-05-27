@@ -1,6 +1,9 @@
 
 
-### ``` [1] Compress PDF using postscript as Intermediate step ```
+### ``` [1] Compress PDF (Source: Stack Overflow) ```
+
+
+#### 1a using postscript as Intermediate step 
 
 #### Step 1:Convert to intermediate postscript format
 `pdf2ps large.pdf large.ps`
@@ -8,6 +11,12 @@
 
 #### Step2 Convert ps back to pdf
 `ps2pdf large.ps small.pdf`
+
+
+#### 1b Using ghostscript
+
+
+`gs -dQUIET -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -dPDFSETTINGS=/printer    -sOutputFile=output.pdf Sarvesh_BOB_filled_scanned_final.pdf`
 
 
 
