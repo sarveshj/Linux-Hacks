@@ -148,3 +148,81 @@ conda env create -f environment.yml
 ```
 
 
+### Git and GitLab command lines
+
+- Useful references: ~ [Gitlab doc for commandline usage] (https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
+- Tip for better understanding: Make changes in command line and view in Gitlab repo!
+
+#### step 1: Generate SSH Key Pair
+ssh-keygen
+
+### modify ssh config and change permissions
+ - add the following to ~/.ssh/config (SSH config file
+  ```
+   User git
+     Hostname gitlab.com
+     IdentityFile ~/.ssh/id_<file_name>
+     TCPKeepAlive yes
+     IdentitiesOnly yes
+  ```
+
+- change file ownership and permissions
+```
+chown $USER  ~/.ssh/config
+chmod 600 ~/.ssh/config
+```
+
+
+### check ssh permissions
+```bash 
+ssh -vv git@gitlab.com
+```
+should get the response if all is good
+
+```PTY allocation request failed on channel 0
+Welcome to GitLab, @sarveshj!
+Connection to gitlab.com closed.
+```
+
+
+### Set local(repo specific)/Global user name
+
+
+### Set Origin/Master for this repo
+``` git remote add origin git@gitlab.com:sarveshj/linkedin_demo.git ```
+which can be checked using
+
+```git remote -v```
+
+### Get latest code -- branching
+
+Get branch name using ```git branch --list```
+
+For **existing** branch
+git pull remote <branch_name> Ex: ```git pull remote main```
+
+Checkout the code for **new** branch/ Create a new feature branc
+```git checkout -b <branch_name>``` Ex: ```git checkout -b sarvesh_scratch```
+
+### Additional Useful Branch commands
+
+- Switch branches using ```git checkout <branch_name> ``` Ex: ```git checkout main ``  
+- Check current branch you're on using ```git status```
+- 
+`
+### Push changes to remote repo
+
+Let `test.py` be the file to be pushed
+
+1. make changes and save it
+2. check if the changes are saves using ```git staus```
+3. Stage the files for commit using ```git add test.py```
+4. COmmit the file to local repo with a custom message ```git commit -m "added new lines" ```
+5. Push to spefic branch say sarvesh_branch using ```git push origin <branch_name>```
+
+
+
+
+
+
+
