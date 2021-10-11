@@ -157,7 +157,7 @@ conda env create -f environment.yml
 ssh-keygen
 
 ### modify ssh config and change permissions
- - add the following to ~/.ssh/config (SSH config file
+ - add the following to ~/.ssh/config (SSH config file)
   ```
    User git
      Hostname gitlab.com
@@ -188,6 +188,11 @@ Connection to gitlab.com closed.
 ### Set local(repo specific)/Global user name
 
 
+
+
+and you can verify your config settings using ``` git config --list ```
+
+
 ### Set Origin/Master for this repo
 ``` git remote add origin git@gitlab.com:sarveshj/linkedin_demo.git ```
 which can be checked using
@@ -197,6 +202,12 @@ which can be checked using
 ### Get latest code -- branching
 
 Get branch name using ```git branch --list```
+
+
+Use ```git pull -all``` for all branches
+Use ```git pull origin main``` for specific branch
+
+
 
 For **existing** branch
 git pull remote <branch_name> Ex: ```git pull remote main```
@@ -214,11 +225,33 @@ Checkout the code for **new** branch/ Create a new feature branc
 
 Let `test.py` be the file to be pushed
 
-1. make changes and save it
-2. check if the changes are saves using ```git staus```
-3. Stage the files for commit using ```git add test.py```
-4. COmmit the file to local repo with a custom message ```git commit -m "added new lines" ```
-5. Push to spefic branch say sarvesh_branch using ```git push origin <branch_name>```
+1. Navigate to branch of choice using ```git checkout branch```
+2. Make changes and save it
+3. check if the changes are saved using ```git status```
+4. Stage the files for commit using ```git add test.py```
+5. Commit the file to local repo with a custom message ```git commit -m "added new lines" ```
+6. Push to spefic branch say sarvesh_branch using ```git push origin <branch_name>```
+
+### Check local repo sync with remote/origin
+
+Run ```git show remote origin``` will show something like in case they are out of sync
+```
+* remote origin
+  Fetch URL: git@gitlab.com:sarveshj/linkedin_demo.git
+  Push  URL: git@gitlab.com:sarveshj/linkedin_demo.git
+  HEAD branch: main
+  Remote branches:
+    Sarvesh_scratch_2 tracked
+    main              tracked
+    sarvesh_scratch   tracked
+  Local refs configured for 'git push':
+    Sarvesh_scratch_2 pushes to Sarvesh_scratch_2 (up to date)
+    main              pushes to main              (local out of date)
+    sarvesh_scratch   pushes to sarvesh_scratch   (up to date)
+
+
+
+```
 
 
 
