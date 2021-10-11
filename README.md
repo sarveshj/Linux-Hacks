@@ -254,6 +254,11 @@ Run ```git show remote origin``` will show something like in case they are out o
 ```
 
 
+### Tips
+
+TODO: tips to handle git merge conflict
+
+
 
 
 
