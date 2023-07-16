@@ -144,7 +144,23 @@ conda env export  > environment.yml
 # recreate conda environment from file
 conda env create -f environment.yml
 
+### ```[14] Pytorch enable GPU/CPU based on availability```
 
+```python
+device = torch.device("cuda:0" if torch.cuda_is_available() else "cpu")
+```
+
+### ```[15] Pytorch choose GPU based on availability```
+
+Option 1:
+```python
+os.system("export CUDA_VISIBLE_DEVICES = 0,1")
+```
+
+
+Option 2: Using bash commandline
+```bash
+export CUDA_VISIBLE_DEVICES = 0,1
 ```
 
 
